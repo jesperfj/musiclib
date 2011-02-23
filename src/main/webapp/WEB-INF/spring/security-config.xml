@@ -25,7 +25,7 @@
 	<security:http entry-point-ref="authenticationProcessingFilterEntryPoint" use-expressions="true">
 	    <!--<security:anonymous />
 	    -->
-	    <security:intercept-url pattern="/secure/**" access="hasRole('ROLE_USER')" />
+	    <security:intercept-url pattern="/**" access="hasRole('ROLE_USER')" />
 	    <!-- sets this as the authentication filter over the default -->
 	    <security:custom-filter position="FORM_LOGIN_FILTER" ref="authenticationFilter"/>
 	    <security:custom-filter position="LOGOUT_FILTER" ref="logoutFilter"/>
