@@ -10,16 +10,7 @@
 </head>
 <body>
 	<div id="header"><div id="app_title">Music Library</div></div>
-	<form action="" method="get">
-		<div id="navigation">${breadcrumb}
-			<c:if test="${hidesearch==null}">
-				<div style="float:right; white-space: nowrap">
-					JPQL WHERE o...<input size="40" type="text" name="q" value="${param.q}"/>
-					<input type="submit" value="Go"/>
-				</div>
-			</c:if>
-		</div>
-	</form>
+	<div id="navigation">${breadcrumb}</div>
 	<div id="content">
 	
 		<jsp:doBody/>

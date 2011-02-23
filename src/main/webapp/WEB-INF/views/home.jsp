@@ -2,17 +2,11 @@
 <%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
 <%@ page session="false" %>
 
-<tags:mainlayout>
+<tags:template>
 
-<jsp:attribute name="breadcrumb">Home</jsp:attribute>
-<jsp:attribute name="hidesearch">true</jsp:attribute>
+	<jsp:attribute name="breadcrumb">Home</jsp:attribute>
 
 <jsp:body>
-<p><a href="album/">Albums</a></p>
-
-<p><a href="artist/">Artists</a></p>
-
-<p><a href="genre/">Genres</a></p>
-
+<p><a href="myentity/new">New Entity</a></p>
 </jsp:body>
-</tags:mainlayout>
+</tags:template>
