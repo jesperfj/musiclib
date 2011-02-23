@@ -9,9 +9,6 @@
 		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
 		http://www.salesforce.com/schema/springsecurity 
         http://www.salesforce.com/schema/springsecurity/force-springsecurity-1.0.xsd">
-
-	<context:property-placeholder location="classpath:oauth.properties"/>
-
     
     <!-- SFDC OAuth security config -->
     <fss:oauth logout-from-force-dot-com="true">
@@ -23,9 +20,15 @@
 	<!-- use-expressions and hasRole only needed if jsp tags are used. 
 		If not using jsp tags you can omit the use-expressions property and set access="ROLE_USER" on the intercept-url tags -->
 	<security:http entry-point-ref="authenticationProcessingFilterEntryPoint" use-expressions="true">
-	    <!--<security:anonymous />
-	    -->
+
+	    <security:anonymous />
+
+		<!--  Uncomment this section to enable security -->
+
+		<!-- 
 	    <security:intercept-url pattern="/**" access="hasRole('ROLE_USER')" />
+		 -->
+
 	    <!-- sets this as the authentication filter over the default -->
 	    <security:custom-filter position="FORM_LOGIN_FILTER" ref="authenticationFilter"/>
 	    <security:custom-filter position="LOGOUT_FILTER" ref="logoutFilter"/>
