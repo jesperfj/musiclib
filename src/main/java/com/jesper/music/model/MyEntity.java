@@ -4,7 +4,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-// We have commented out the @Entity annotation in this template, so you can compile
+// The @Entity annotation is commented out in this template, so you can compile
 // and run the project without creating any new entities in your database. We suggest
 // you rename this class and make other modifications, then uncomment the @Entity
 // annotation and test it out.
@@ -21,16 +21,8 @@ public class MyEntity {
     
 	private String name;
 
-    /*******************************************************************************
-     * TODO: Add more example fields
+	// TODO: Add additional commented-out sample fields
 	
-
-    @CustomField(externalId=true)
-    private String externalId;
-
-
-    ********************************************************************************/
-
 	public String getId() {
 		return id;
 	}
