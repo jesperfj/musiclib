@@ -1,6 +1,5 @@
 package com.jesper.music.model;
 
-import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -10,7 +9,7 @@ import javax.persistence.Id;
 // you rename this class and make other modifications, then uncomment the @Entity
 // annotation and test it out.
 
-@Entity
+//@Entity
 public class MyEntity {
 
 	// The Force.com JPA provider only supports annotating fields. Don't annotate
